@@ -1,0 +1,70 @@
+{% load pages_tags i18n %}
+{% page_menu "pages/menus/dropdown.html" %}
+{% spaceless %}
+<div class="container">
+    <div class="row">
+        <div class="span9">
+            <a href="/">
+            <img id="logo" src="{{ STATIC_URL }}/img/logo.png" />
+            <h1 class="hide-text">Kenora-Rainy River District Child &amp; Family Services</h1></a>
+        </div>
+        <div class="span3 pull-right">
+            <div class="infobox">
+                <p>Need Help or Reporting Abuse/Concerns?</p>
+                <p>1-800-465-1100</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <nav role="navigation" id="main_navigation">
+            <ul role="menubar">
+                {% for page in page_branch %}
+                {% if page.title != "Blog" %}
+                <li id="menu-{{ page.html_id }}" role="menuitem"{% if page.has_children %} aria-haspopup="true" class="dropdown"{% endif %}>
+                    <a href="{{ page.get_absolute_url }}"{% if page.has_children %} class="dropdown-toggle" data-toggle="dropdown"{% endif %}>{{ page.title }}</a>
+                    {% if page.has_children %}{% page_menu page %}{% endif %}
+                    {% if branch_level == 1 %}
+                    <ul class="dropdown-menu">
+                        {% for page in page_branch %}
+                        {% if page.in_menu and page.status == 2 %}
+                        <ul class="primary-menu" {% if page.has_children %}{% endif %} id="dropdown-menu-{{ page.html_id }}">
+                        <li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
+                        {% if page.has_children %}{% page_menu page %}{% endif %}
+                        {% if branch_level == 3 %}
+                        <ul class="secondary-menu">
+                            {% for page in page_branch %}
+                            {% if page.in_menu and page.status == 2 %}
+                            <li id="dropdown-menu-{{ page.html_id }}">
+                            <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+                            {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        </ul>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="row">        
+        <div class="span12">
+            <ul class="breadcrumb">
+                {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+            
+                <form action="{% url search %}" class="pull-right">
+                        <input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.REQUEST.q }}">
+                </form>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endspaceless %}
