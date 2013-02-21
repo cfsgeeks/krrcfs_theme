@@ -403,3 +403,9 @@ a[href$=".docx"]:after { content: " (DOCX)"; }
 
 /* If file size specified as data attribute, use that too */
 a[href$=".docx"][data-size]:after { content: " (DOCX, " attr(data-size) ")"; }
+
+
+.primary li:first-child a {
+    font-weight:bold;
+    color:#444;
+}
