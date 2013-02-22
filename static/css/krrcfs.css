@@ -407,5 +407,5 @@ a[href$=".docx"][data-size]:after { content: " (DOCX, " attr(data-size) ")"; }
 
 .primary li:first-child a {
     font-weight:bold;
-    color:#444;
+    color:#777;
 }
