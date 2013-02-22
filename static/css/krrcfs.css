@@ -110,18 +110,6 @@
 
 }
 
-@font-face {
-                font-family: 'NovareseLT-Medium';
-                src: url('/static/fonts/itcnovareseltmedium.eot');
-                src: url('/static/fonts/itcnovareseltmedium.eot?#iefix') format('embedded-opentype'),
-                         url('/static/fonts/itcnovareseltmedium.svg#itcnovareseltmedium') format('svg');
-                         url('/static/fonts/itcnovareseltmedium.woff') format('woff'),
-                         url('/static/fonts/itcnovareseltmedium.ttf') format('truetype');
-                font-weight: normal;
-                font-style: normal;
-        }
-
-
 
 footer {
     border-top: 1px solid #eee;
