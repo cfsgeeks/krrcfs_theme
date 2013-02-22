@@ -183,11 +183,6 @@ html {
     background-color: #fff;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-}
-
 li a:hover {
     background: #333;
 }
