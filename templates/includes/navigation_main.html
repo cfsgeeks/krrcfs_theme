@@ -28,22 +28,8 @@
                     <ul class="dropdown-menu">
                         {% for page in page_branch %}
                         {% if page.in_menu and page.status == 2 %}
-                        <ul class="primary-menu" {% if page.has_children %}{% endif %} id="dropdown-menu-{{ page.html_id }}">
                         <li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
                         {% if page.has_children %}{% page_menu page %}{% endif %}
-                        {% if branch_level == 3 %}
-                        <ul class="secondary-menu">
-                            {% for page in page_branch %}
-                            {% if page.in_menu and page.status == 2 %}
-                            <li id="dropdown-menu-{{ page.html_id }}">
-                            <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
-                            {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
-                            </li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                        </ul>
                         {% endif %}
                         {% endfor %}
                     </ul>
