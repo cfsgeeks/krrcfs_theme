@@ -203,7 +203,7 @@ nav>ul {
     z-index: 2000;
 }
 
-nav ul li {
+nav>ul>li {
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #333;
     float: left;
