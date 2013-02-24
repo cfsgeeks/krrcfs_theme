@@ -21,7 +21,7 @@
             <ul role="menubar">
                 {% for page in page_branch %}
                 {% if page.title != "Blog" and page.in_menu %}
-                <li id="menu-{{ page.html_id }}" role="menuitem"{% if page.has_children %} aria-haspopup="true" class="dropdown vig"{% endif %}>
+                <li id="menu-{{ page.html_id }}" role="menuitem"{% if page.has_children %} aria-haspopup="true" class="dropdown"{% endif %}>
                     <a href="{{ page.get_absolute_url }}"{% if page.has_children %} class="dropdown-toggle" data-toggle="dropdown"{% endif %}>{{ page.title }}</a>
                     {% if page.has_children %}{% page_menu page %}{% endif %}
                     {% if branch_level == 1 %}
