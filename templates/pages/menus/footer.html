@@ -5,11 +5,8 @@
 
 {% for page in page_branch %}
     {% if page.is_primary %}
-        {% if forloop.first %}
-            <ul class="first">
-        {% endif %}
         {% if page.in_menu %}
-            <li><ul class="primary">
+            <ul class="primary">
         {% endif %}
     {% endif %}
 
@@ -31,9 +28,6 @@
 
     {% if page.is_primary %}
         {% if page.in_menu %}
-            </ul></li>
-        {% endif %}
-        {% if forloop.last %}
             </ul>
         {% endif %}
     {% endif %}
