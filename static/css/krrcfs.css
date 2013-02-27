@@ -165,9 +165,7 @@ body {
     -moz-box-sizing: -moz-border-box;
     -webkit-box-sizing: -webkit-border-box;
     height: 100%;
-    line-height: 1.375em;
     margin: 0 auto;
-    font-size:100%;
 }
 
 div#values>h2 {
