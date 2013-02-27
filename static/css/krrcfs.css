@@ -352,7 +352,8 @@ html {
 }
 
 .spacer-top {
-    margin-top: 20px;
+    position:relative;
+    top:-80px;
 }
 
 /* Add " (PDF)" text after links that go to PDFs */
