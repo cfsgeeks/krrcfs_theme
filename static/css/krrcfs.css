@@ -143,8 +143,8 @@ footer {
 }
 
 .infobox {
-    background: #90244e;
-    border: 1px solid #c4c4c4;
+    background: #9E1F63;
+    border: 1px solid #726658;
     color: white;
     font-family: 'WalkwayBoldRegular';
     font-size: 1.4em;
@@ -214,20 +214,20 @@ nav>ul>li {
 }
 
 #menu-childrens-services {
-    background: #90244e;
+    background: #9E1F63;
     border-left: none;
 }
 
 #menu-clinical-community-services {
-    background: #669036;
+    background: #77A03F;
 }
 
 #menu-family-services {
-    background: #125a60;
+    background: #227B82;
 }
 
 #menu-corporate-services {
-    background: #605a4e;
+    background: #726658;
     border-right: none;
 }
 
@@ -247,7 +247,7 @@ html {
 }
 
 #values>dl:first-child {
-    background-color: #90244e;
+    background-color: #9E1F63;
     color: #fff;
     padding: 5px;
 }
@@ -255,7 +255,7 @@ html {
 #values>dl:first-child dt {
     font-size: 1.5em;
     font-weight: 400;
-    font-family: 'Source Sans Pro';
+    font-family: 'WalkwayBoldRegular';
 }
 
 #values>dl:first-child dd {
@@ -318,7 +318,7 @@ html {
 }
 
 .values-list dt {
-    color:#90244e;
+    color:#9E1F63;
 }
 
 .values>dd, .values-list dd  {
