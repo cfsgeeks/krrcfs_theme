@@ -143,7 +143,7 @@ footer {
 }
 
 .infobox {
-    background: #9E1F63;
+    background: #761B4F;
     border: 1px solid #726658;
     color: white;
     font-family: 'WalkwayBoldRegular';
@@ -214,7 +214,7 @@ nav>ul>li {
 }
 
 #menu-childrens-services {
-    background: #9E1F63;
+    background: #761B4F;
     border-left: none;
 }
 
@@ -247,7 +247,7 @@ html {
 }
 
 #values>dl:first-child {
-    background-color: #9E1F63;
+    background-color: #761B4F;
     color: #fff;
     padding: 5px;
 }
@@ -318,7 +318,7 @@ html {
 }
 
 .values-list dt {
-    color:#9E1F63;
+    color:#761B4F;
 }
 
 .values>dd, .values-list dd  {
