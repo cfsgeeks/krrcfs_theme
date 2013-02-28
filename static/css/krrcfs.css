@@ -169,7 +169,7 @@ body {
     margin: 0 auto;
 }
 
-div#values>h2 {
+#values h2 {
     border-bottom: 1px solid #fff;
     color: #111;
     font-family: 'WalkwayBoldRegular';
@@ -192,7 +192,7 @@ li a:hover, li a:focus {
     text-shadow: none;
 }
 
-nav>ul {
+nav ul {
     display: block;
     height: 82px;
     list-style: none;
@@ -202,7 +202,7 @@ nav>ul {
     z-index: 2000;
 }
 
-nav>ul>li {
+nav li {
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #333;
     float: left;
@@ -232,7 +232,7 @@ nav>ul>li {
     border-right: none;
 }
 
-nav>ul>li>a {
+nav a {
     color: #fff;
     height: 100%;
     text-align: center;
@@ -247,19 +247,19 @@ html {
     background: #fff;
 }
 
-#values>dl:first-child {
+#values dl:first-child {
     background-color: #761B4F;
     color: #fff;
     padding: 5px;
 }
 
-#values>dl:first-child dt {
+#values dl:first-child dt {
     font-size: 1.5em;
     font-weight: 400;
     font-family: 'WalkwayBoldRegular';
 }
 
-#values>dl:first-child dd {
+#values dl:first-child dd {
     margin-top: 5px;
     margin-bottom: 0px;
     padding: 0px;
@@ -275,10 +275,10 @@ html {
     background:rgba(114,102,88,0.35);
 }
 
-.breadcrumb>li {
+.breadcrumb li {
     text-shadow:none;
 }
-.breadcrumb>.active {
+.breadcrumb .active {
     color:#111;
 }
 
@@ -292,11 +292,11 @@ html {
     margin:0;
 }
 
-.first>li {
+.first li {
     width:25%;
 }
 
-.first>li li:first-child {
+.first li li:first-child {
     padding:5px 0;
 }
 
