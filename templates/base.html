@@ -10,20 +10,11 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 
-{% ifinstalled mezzanine.blog %}
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{% url blog_post_feed "rss" %}">
-<link rel="alternate" type="application/atom+xml" title="Atom" href="{% url blog_post_feed "atom" %}">
-{% endifinstalled %}
-
 {% compress css %}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
-<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.min.css">
-<link rel="stylesheet" href="{{ STATIC_URL }}css/mezzanine.css">
-<link rel="stylesheet" href="{{ STATIC_URL }}css/krrcfs.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}css/combined.css">
 {% ifinstalled cartridge.shop %}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/cartridge.css">
 {% endifinstalled %}
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
 {% block extra_css %}{% endblock %}
 {% endcompress %}
 
