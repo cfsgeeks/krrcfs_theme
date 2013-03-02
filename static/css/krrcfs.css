@@ -270,9 +270,3 @@ a[href$=".docx"][data-size]:after { content: " (DOCX, " attr(data-size) ")"; }
 	font-family:'WalkwayBoldRegular';
 	letter-spacing:1.5px;
 }
-
-@media \0screen {
-    img {
-        width:auto;
-    }
-}
