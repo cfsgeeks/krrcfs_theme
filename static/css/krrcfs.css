@@ -222,6 +222,11 @@ html {
     font-size:14px;
     font-weight:normal;
     min-width:100%;
+    margin:0 auto;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius:none;
+    box-shadow:none;
 }
 
 .dropdown-menu ul {
@@ -274,11 +279,4 @@ nav li.dropdown:hover ul.dropdown-menu{
 
 a.menu:after, .dropdown-toggle:after {
     content: none;
-}
-
-.dropdown-menu {
-    margin: 0 auto;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
 }
