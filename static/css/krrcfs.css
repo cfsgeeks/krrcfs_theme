@@ -270,3 +270,11 @@ a[href$=".docx"][data-size]:after { content: " (DOCX, " attr(data-size) ")"; }
 	font-family:'WalkwayBoldRegular';
 	letter-spacing:1.5px;
 }
+
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;
+}
+
+a.menu:after, .dropdown-toggle:after {
+    content: none;
+}
