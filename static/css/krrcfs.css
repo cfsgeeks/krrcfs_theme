@@ -218,8 +218,14 @@ html {
     margin-left: 0;
 }
 
+#maincontent {
+    margin-top: 40px;
+}
+
 .dropdown-menu {
-    min-width: 100%;
+    font-size:14px;
+    font-weight:normal;
+    min-width:100%;
 }
 
 .dropdown-menu ul {
