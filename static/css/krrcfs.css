@@ -275,3 +275,10 @@ nav li.dropdown:hover ul.dropdown-menu{
 a.menu:after, .dropdown-toggle:after {
     content: none;
 }
+
+.dropdown-menu {
+    margin: 0 auto;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
