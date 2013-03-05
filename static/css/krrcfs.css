@@ -218,13 +218,8 @@ html {
     margin-left: 0;
 }
 
-#maincontent {
-    margin-top: 40px;
-}
-
 .dropdown-menu {
-    font-size:16px;
-    font-weight:normal;
+    min-width: 100%;
 }
 
 .dropdown-menu ul {
