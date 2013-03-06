@@ -280,3 +280,19 @@ nav li.dropdown:hover ul.dropdown-menu{
 a.menu:after, .dropdown-toggle:after {
     content: none;
 }
+
+#menu-childrens-services .dropdown-menu li>a:hover {
+    background:#761b4f;
+}
+
+#menu-clinical-community-services .dropdown-menu li>a:hover {
+    background:#77A03F;
+}
+
+#menu-family-services .dropdown-menu li>a:hover {
+    background: #227B82;
+}
+
+#menu-corporate-services .dropdown-menu li>a:hover {
+    background: #726658;
+}
