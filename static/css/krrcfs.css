@@ -307,9 +307,9 @@ a.menu:after, .dropdown-toggle:after {
     background-size:50%;
     -webkit-background-size: 50%;
     background-position: bottom right;
-    background-opacity: 0.175;
-    -moz-background-opacity:0.175;
-    -webkit-background-opacity:0.175;
+    opacity: 0.175;
+    -moz-opacity:0.175;
+    -webkit-opacity:0.175;
     z-index:0;
 }
 
