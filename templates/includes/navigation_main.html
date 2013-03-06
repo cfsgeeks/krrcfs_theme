@@ -2,7 +2,7 @@
 {% page_menu "pages/menus/dropdown.html" %}
 {% spaceless %}
 <div class="container">
-    <div class="row">
+    <div class="row" role="banner">
         <div class="span9">
             <a href="/">
             <img id="logo" src="{{ STATIC_URL }}/img/logo.png" />
@@ -45,9 +45,8 @@
         <div class="span12">
             <ul class="breadcrumb">
                 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
-            
                 <form action="{% url search %}" class="pull-right">
-                        <input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.REQUEST.q }}">
+                        <input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.REQUEST.q }}" role="search">
                 </form>
             </ul>
         </div>

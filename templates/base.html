@@ -57,7 +57,7 @@
     <div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
     {% endblock %}
 </div>
-<div class="span8 middle">
+<div class="span8 middle" role="main">
 <h2>{% block title %}{% endblock %}</h2>
 {% endif %}
 {% block main %}{% endblock %}
@@ -67,7 +67,7 @@
 </div>
 </div>
 
-<footer>
+<footer role="contentinfo">
 <div class="container">
     <div class="row">
         {% page_menu "pages/menus/footer.html" %}
