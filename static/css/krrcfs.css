@@ -350,3 +350,10 @@ a {
     color:#0cb0c1;
 }
 
+.panel {
+    background: none;
+    border:none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+}
