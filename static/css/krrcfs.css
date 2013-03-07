@@ -390,3 +390,11 @@ img {
 .page-header {
     border-bottom:1px solid #726658;
 }
+
+.column-list {
+    -webkit-column-count:5;
+    -moz-column-count:5;
+    -ms-column-count:5;
+    column-count:5;
+    margin-left:0;
+}
