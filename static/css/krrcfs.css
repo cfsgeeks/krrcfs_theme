@@ -138,11 +138,15 @@ html {
     background: #fff;
 }
 
-#values>dl:first-child {
+#values dl:first-child {
     background-color: #761B4F;
     color: #fff;
     padding: 5px;
     margin-top:0;
+}
+
+#values>dd {
+    margin-left:0;
 }
 
 #values>dl:first-child dt {
