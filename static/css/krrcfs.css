@@ -83,12 +83,6 @@ html {
     background-color: #fff;
 }
 
-li a:hover, li a:focus {
-    background: #bfefff;
-    color: #2b2b2b;
-    text-shadow: none;
-}
-
 nav>ul {
     display: block;
     height: 82px;
