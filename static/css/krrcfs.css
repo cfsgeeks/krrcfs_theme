@@ -380,3 +380,9 @@ input[name="q"] {
     position:relative;
     z-index:1;
 }
+
+img {
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow: none;
+}
