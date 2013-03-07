@@ -362,3 +362,11 @@ input[name="q"] {
     box-shadow:none;
     padding: 0 6px;
 }
+
+.map {
+    background:url('http://cambelt.co/300x300/Two+Color?color=726658,ffffff') no-repeat;
+}
+
+.bigmap {
+    background:url('http://cambelt.co/940x235/Two+Color?color=77A03F,ffffff') no-repeat;
+}
