@@ -11,8 +11,13 @@
 }
 
 footer {
-    border-top: 1px solid #eee;
-    background: rgba(114,102,88,0.35);
+    background:none;
+}
+
+footer .container {
+    background:none;
+    border-top:1px solid #726658;
+    padding: 10px 0 0;
 }
 
 #logo {
@@ -71,7 +76,7 @@ div#values>h2 {
     font-family: 'WalkwayBoldRegular';
     letter-spacing:1.5px;
     font-weight: 400;
-    text-shadow: 0px 0px 3px #c4c4c4;
+    text-shadow: 0 0 3px #c4c4c4;
 }
 
 html {
@@ -153,8 +158,8 @@ html {
 
 #values>dl:first-child dd {
     margin-top: 5px;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .breadcrumb {
@@ -223,9 +228,9 @@ html {
     font-weight:normal;
     min-width:100%;
     margin:0 auto;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius:0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius:0;
     box-shadow:none;
 }
 
@@ -304,12 +309,12 @@ a.menu:after, .dropdown-toggle:after {
     left:0;
     width:100%;
     height:100%;
-    -webkit-background-size: 50%;
-    background-size:50%;
-    background-position: bottom right;
-    -moz-opacity:0.175;
-    -webkit-opacity:0.175;
-    opacity: 0.175;
+    -webkit-background-size: 75%;
+    background-size:75%;
+    background-position: center center;
+    -moz-opacity:0.15;
+    -webkit-opacity:0.15;
+    opacity: 0.15;
     z-index:0;
 }
 
@@ -344,3 +349,4 @@ a.menu:after, .dropdown-toggle:after {
 a {
     color:#0cb0c1;
 }
+
