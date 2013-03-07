@@ -138,7 +138,7 @@ html {
     background: #fff;
 }
 
-#values dl:first-child {
+#values>dl:first-child {
     background-color: #761B4F;
     color: #fff;
     padding: 5px;
