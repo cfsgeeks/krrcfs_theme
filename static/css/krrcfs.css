@@ -344,6 +344,10 @@ a {
     color:#0cb0c1;
 }
 
+a:hover, a:focus {
+    color:#186872;
+}
+
 .panel {
     background: none;
     border:none;
