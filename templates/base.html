@@ -49,7 +49,7 @@
 
 <div class="container" id="maincontent" role="main">
 <div class="row">
-{% if request.path == "/" %}
+{% if request.path == "/" or request.path == "/contact-us/" %}
 <div class="span12">
 {% else %}
 <div class="span4 left">
