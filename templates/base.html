@@ -15,6 +15,12 @@
 {% ifinstalled cartridge.shop %}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/cartridge.css">
 {% endifinstalled %}
+{% if request.path == "/contact-us/" %}
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+    <![endif]-->
+{% endif %}
 {% block extra_css %}{% endblock %}
 {% endcompress %}
 
@@ -84,6 +90,9 @@
 </footer>
 {% compress js %}
 <script src="{{ STATIC_URL }}js/combined.js"></script>
+{% if request.path == "/contact-us/" %}
+    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+{% endif %}
 <script>
 $(function() {
     $('.middleinput:text, textarea').addClass('xlarge');
