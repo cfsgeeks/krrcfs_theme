@@ -70,7 +70,7 @@ body {
     margin: 0 auto;
 }
 
-div#values>h2 {
+#values>h2 {
     border-bottom: 1px solid #fff;
     color: #111;
     font-family: 'WalkwayBoldRegular';
@@ -213,7 +213,7 @@ html {
     color:#761B4F;
 }
 
-.values>dd, .values-list dd  {
+#values>dd, .values-list dd  {
     margin-left: 0;
 }
 
@@ -369,4 +369,9 @@ input[name="q"] {
 
 .bigmap {
     background:url('http://cambelt.co/940x235/Two+Color?color=77A03F,ffffff') no-repeat;
+}
+
+#values {
+    position:relative;
+    z-index:1;
 }
