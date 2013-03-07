@@ -169,14 +169,14 @@ html {
     -o-border-radius:0;
     -ms-border-radius:0;
     border-radius:0;
-    background:rgba(114,102,88,0.35);
+    background:none;
 }
 
 .breadcrumb>li {
     text-shadow:none;
 }
 .breadcrumb>.active {
-    color:#111;
+    color:#726658;
 }
 
 .values-list dd {
@@ -356,4 +356,11 @@ a {
     -webkit-border-radius:0;
     -moz-border-radius:0;
     border-radius:0;
+}
+
+input[name="q"] {
+    border-radius:0;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    padding: 0 6px;
 }
