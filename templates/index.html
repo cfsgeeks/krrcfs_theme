@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 
-{% load blog_tags %}
-
 {% block meta_title %}Home{% endblock %}
 {% block main %}
     <div class="container">
@@ -47,12 +45,7 @@
         <div class="row spacer-top">
             <div class="span8 text-center">
                 <h2 class="vig">Agency News</h2>
-                {% blog_recent_posts as recent_posts %}
-                {% if recent_posts %}
-                {% for post in recent_posts %}
-                <h4><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
-                {% endfor %}
-                {% endif %}
+                <esi:include src="/get-agency-news/" />
             </div>
             <div class="span4"></div>
         </div>
