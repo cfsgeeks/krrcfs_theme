@@ -100,7 +100,7 @@ $(function() {
 {% block extra_js %}{% endblock %}
 {% endcompress %}
     {% if request.path == "/contact-us/" %}
-    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        {% include 'maps.html' %}
     {% endif %}
 {% include "includes/footer_scripts.html" %}
 <script type="text/javascript">
