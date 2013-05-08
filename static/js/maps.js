@@ -19,4 +19,6 @@ $(function(){
 	for (i = 0; i < num_offices; i++) {
 		map.addMarker({lat:i.lat,lng:i.lng,title:i.name})	
 	}
+
+    console.log(map);
 });
