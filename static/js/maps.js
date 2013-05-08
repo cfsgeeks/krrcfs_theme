@@ -11,7 +11,9 @@ $(function(){
 
 	num_offices = offices.length;
 	map = new GMaps({
-		div:'#map-region'
+		div:'#map-region',
+        lat:49,
+        lng:-92
 	});
 
 	for (i = 0; i < num_offices; i++) {
