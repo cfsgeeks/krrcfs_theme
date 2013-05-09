@@ -400,6 +400,10 @@ img {
     list-style:none;
 }
 
+div[property=address] {
+    margin-bottom:15px;
+}
+
 div[property=address] span,
 span[property=telephone],
 span[property=faxNumber] {
