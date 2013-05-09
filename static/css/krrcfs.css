@@ -406,9 +406,9 @@ span[property=faxNumber] {
     display:block;
 }
 
-span[property=addressLocality],
-span[property=addressRegion],
-span[property=postalCode]
+div[property=address] span[property=addressLocality],
+div[property=address] span[property=addressRegion],
+div[property=address] span[property=postalCode]
 {
     display:inline;
 }
