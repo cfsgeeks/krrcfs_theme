@@ -416,3 +416,10 @@ div[property=address] span[property=postalCode]
 span[property=addressLocality]:after {
     content:', ';
 }
+
+span[property=telephone]:before {
+    content:'Phone: ';
+}
+span[property=faxNumber]:before {
+    content:'Fax: ';
+}
