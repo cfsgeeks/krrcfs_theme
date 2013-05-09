@@ -399,3 +399,20 @@ img {
     margin-left:0;
     list-style:none;
 }
+
+div[property=address] span,
+span[property=telephone],
+span[property=faxNumber] {
+    display:block;
+}
+
+span[property=addressLocality],
+span[property=addressRegion],
+span[property=postalCode]
+{
+    display:inline;
+}
+
+span[property=addressLocality]:after {
+    content:', ';
+}
