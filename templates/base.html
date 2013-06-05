@@ -9,6 +9,7 @@
 <meta name="description" content="{% block meta_description %}{% endblock %}">
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
+<script src="{{ STATIC_URL }}js/cssfx.min.js"></script>
 <link rel="stylesheet" href="{{ STATIC_URL }}css/combined.css" class="cssfx">
 {% compress css %}
 {% ifinstalled cartridge.shop %}
@@ -91,7 +92,7 @@ $(function() {
 </script>
 {% block extra_js %}{% endblock %}
 {% endcompress %}
-<script src="{{ STATIC_URL }}js/cssfx.min.js"></script>
+
     {% if request.path == "/corporate-services/contact-us/" %}
         {% include 'includes/maps.html' %}
     {% endif %}
