@@ -9,7 +9,7 @@
 <meta name="description" content="{% block meta_description %}{% endblock %}">
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
-{% if "MSIE 8.0" in request.META['HTTP_USER_AGENT'] %}
+{% if "MSIE 8.0" in HttpRequest.META['HTTP_USER_AGENT'] %}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/combined.css" class="cssfx">
 {% else %}
 {% compress css %}
