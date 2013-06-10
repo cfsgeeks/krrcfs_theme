@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags %}
 
-{% block meta_title %}{% if page %}{{ page.richtextpage.meta_title }}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
+{% block meta_title %}{% if page %}{{ page.richtextpage.meta_title }}{% endif %}{% endblock %}
 
 {% block meta_keywords %}{% metablock %}
 {% keywords_for page as keywords %}
@@ -18,8 +18,6 @@
 {% block title %}
 {% if page %}
 {% editable page.title %}{{ page.title }}{% endeditable %}
-{% else %}
-{% trans "Blog" %}
 {% endif %}
 {% endblock %}
 
@@ -80,16 +78,7 @@
 {% block blog_post_list_post_metainfo %}
 {% editable blog_post.publish_date %}
 <h6>
-    {% trans "Posted by" %}:
-    {% with blog_post.user as author %}
-    <a href="{% url "blog_post_list_author" author %}">{{ author.get_full_name|default:author.username }}</a>
-    {% endwith %}
-    {% if blog_post.category_list %}
-    {% trans "in" %}
-    {% for category in blog_post.category_list %}
-    <a href="{% url "blog_post_list_category" category.slug %}">{{ category }}</a>
-    {% endfor %}
-    {% endif %}
+    {% trans "Posted " %}:
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
 </h6>
 {% endeditable %}
@@ -119,29 +108,10 @@
     <br>
     {% endif %}
     <a href="{{ blog_post.get_absolute_url }}">{% trans "read more" %}</a>
-    /
-    {% if settings.COMMENTS_DISQUS_SHORTNAME %}
-    <a href="{{ blog_post.get_absolute_url }}#disqus_thread"
-        data-disqus-identifier="{% disqus_id_for blog_post %}">
-        {% trans "Comments" %}
-    </a>
-    {% else %}
-    <a href="{{ blog_post.get_absolute_url }}#comments">
-        {% blocktrans count blog_post.comments_count as comments_count %}1 comment{% plural %}{{ comments_count }} comments{% endblocktrans %}
-    </a>
-    {% endif %}
 </p>
 {% endblock %}
 {% endfor %}
 
 {% pagination_for blog_posts %}
 
-{% if settings.COMMENTS_DISQUS_SHORTNAME %}
-{% include "generic/includes/disqus_counts.html" %}
-{% endif %}
-
-{% endblock %}
-
-{% block right_panel %}
-{% include "blog/includes/filter_panel.html" %}
 {% endblock %}
