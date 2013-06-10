@@ -24,7 +24,6 @@
 	    Published {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
 	</h6>
 	{% endeditable %}
-	{% endblock %}
 
 	{% block blog_post_detail_featured_image %}
 	{% if blog_post.featured_image %}
@@ -40,6 +39,7 @@
 
 	{% block blog_post_previous_next %}
 	<ul class="pager">
+	
 	{% with blog_post.get_previous_by_publish_date as previous %}
 	{% if previous %}
 	<li class="previous">
@@ -47,6 +47,7 @@
 	</li>
 	{% endif %}
 	{% endwith %}
+
 	{% with blog_post.get_next_by_publish_date as next %}
 	{% if next %}
 	<li class="next">
@@ -56,4 +57,5 @@
 	{% endwith %}
 	</ul>
 	{% endblock %}
+
 {% endblock %}
