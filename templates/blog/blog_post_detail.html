@@ -19,40 +19,41 @@
 
 {% block main %}
 
-{% editable blog_post.publish_date %}
-<h6>
-    Published {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
-</h6>
-{% endeditable %}
-{% endblock %}
+	{% editable blog_post.publish_date %}
+	<h6>
+	    Published {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
+	</h6>
+	{% endeditable %}
+	{% endblock %}
 
-{% block blog_post_detail_featured_image %}
-{% if blog_post.featured_image %}
-<p><img src="{{ MEDIA_URL }}{% thumbnail blog_post.featured_image 600 0 %}"></p>
-{% endif %}
-{% endblock %}
+	{% block blog_post_detail_featured_image %}
+	{% if blog_post.featured_image %}
+	<p><img src="{{ MEDIA_URL }}{% thumbnail blog_post.featured_image 600 0 %}"></p>
+	{% endif %}
+	{% endblock %}
 
-{% block blog_post_detail_content %}
-{% editable blog_post.content %}
-{{ blog_post.content|richtext_filter|safe }}
-{% endeditable %}
-{% endblock %}
+	{% block blog_post_detail_content %}
+	{% editable blog_post.content %}
+	{{ blog_post.content|richtext_filter|safe }}
+	{% endeditable %}
+	{% endblock %}
 
-{% block blog_post_previous_next %}
-<ul class="pager">
-{% with blog_post.get_previous_by_publish_date as previous %}
-{% if previous %}
-<li class="previous">
-    <a href="{{ previous.get_absolute_url }}">&larr; {{ previous }}</a>
-</li>
-{% endif %}
-{% endwith %}
-{% with blog_post.get_next_by_publish_date as next %}
-{% if next %}
-<li class="next">
-    <a href="{{ next.get_absolute_url }}">{{ next }} &rarr;</a>
-</li>
-{% endif %}
-{% endwith %}
-</ul>
+	{% block blog_post_previous_next %}
+	<ul class="pager">
+	{% with blog_post.get_previous_by_publish_date as previous %}
+	{% if previous %}
+	<li class="previous">
+	    <a href="{{ previous.get_absolute_url }}">&larr; {{ previous }}</a>
+	</li>
+	{% endif %}
+	{% endwith %}
+	{% with blog_post.get_next_by_publish_date as next %}
+	{% if next %}
+	<li class="next">
+	    <a href="{{ next.get_absolute_url }}">{{ next }} &rarr;</a>
+	</li>
+	{% endif %}
+	{% endwith %}
+	</ul>
+	{% endblock %}
 {% endblock %}
