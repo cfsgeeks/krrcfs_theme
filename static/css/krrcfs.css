@@ -341,19 +341,19 @@ a.menu:after, .dropdown-toggle:after {
 }
 
 .nav-list li.active>a[href*="childrens-services"] {
-    background:#761B4F;
+    background-color:#761B4F;
 }
 
 .nav-list li.active>a[href*="clinical-community-services"] {
-    background:#77a03f;
+    background-color:#77a03f;
 }
 
 .nav-list li.active>a[href*="family-services"] {
-    background:#227B82;
+    background-color:#227B82;
 }
 
 .nav-list li.active>a[href*="corporate-services"] {
-    background:#726658;
+    background-color:#726658;
 }
 
 a {
