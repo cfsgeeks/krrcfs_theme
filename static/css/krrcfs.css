@@ -321,6 +321,8 @@ a.menu:after, .dropdown-toggle:after {
     -webkit-opacity:0.15;
     opacity: 0.15;
     z-index:0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+    -ms-behavior: url(/static/js/backgroundsize.min.htc);
 }
 
 #statement {
