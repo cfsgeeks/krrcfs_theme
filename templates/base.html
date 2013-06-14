@@ -92,6 +92,8 @@ $(function() {
 </script>
 {% block extra_js %}{% endblock %}
 {% endcompress %}
+<script src="{{ STATIC_URL }}js/respond.min.js"></script>
+
     {% if request.path == "/corporate-services/contact-us/" %}
         {% include 'includes/maps.html' %}
     {% endif %}
