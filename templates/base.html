@@ -12,9 +12,6 @@
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/combined.css" class="cssfx">
 {% compress css %}
-{% ifinstalled cartridge.shop %}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/cartridge.css">
-{% endifinstalled %}
 {% block extra_css %}{% endblock %}
 {% endcompress %}
 
@@ -74,14 +71,9 @@
         {% page_menu "pages/menus/footer.html" %}
     </div>
 <br style="clear:both">
-<p>
-    {% ifinstalled mezzanine.mobile %}
-    <span class="separator">|</span>
-    <a href="{% url set_device "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-    {% endifinstalled %}
-</p>
 </div>
 <p>Copyright &copy;{% now "Y" %} Kenora-Rainy River Districts Child and Family Services</p>
+ad
 </footer>
 {% compress js %}
 <script src="{{ STATIC_URL }}js/combined.js"></script>
