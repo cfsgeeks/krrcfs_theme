@@ -3,5 +3,6 @@
 {% if recent_posts %}
 {% for post in recent_posts %}
 <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+<div>{{post.content}}</div>
 {% endfor %}
 {% endif %}
