@@ -49,6 +49,7 @@
 <div class="row">
 {% if request.path == "/" or request.path == "/contact-us/" %}
 <div class="span12">
+    {% block slides %}{% endblock %}
 {% else %}
 <div class="span4 left">
     {% block left_panel %}
