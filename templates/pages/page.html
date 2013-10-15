@@ -16,13 +16,13 @@
 {% endmetablock %}{% endblock %}
 {% block slides %}{% if page.slide_set.all %}
 <div class="row">
-{% if request.path == "/"}
+{% if request.path == "/" %}
 <div class="span12">
 {% else %}
 <div class="span8">
 {% endif %}
     <ul class="rslides">{% for image in page.slide_set.all %}
-        <li><img src="{{ MEDIA_URL }}{% thumbnail image.file 300 300 %}" alt="{{ image.description }}"/></li>
+        <li><img src="{{ MEDIA_URL }}{% thumbnail image.file %}" alt="{{ image.description }}"/></li>
     {% endfor %}</ul>
 </div>
 </div>
