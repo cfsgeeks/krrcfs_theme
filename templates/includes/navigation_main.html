@@ -42,13 +42,15 @@
         </div>
     </div>
     <div class="row">        
-        <div class="span12">
+        <div class="span6">
             <ul class="breadcrumb">
                 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
-                <form action="{% url search %}" class="pull-right">
-                        <input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.REQUEST.q }}" role="search">
-                </form>
             </ul>
+        </div>
+        <div class="span6">
+            <form action="{% url search %}" class="pull-right">
+                <input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.REQUEST.q }}" role="search">
+            </form>
         </div>
     </div>
 </div>
