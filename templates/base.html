@@ -11,6 +11,7 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/combined.css" class="cssfx">
+<link rel="stylesheet" href="{{ STATIC_URL }}css/responsiveslides.css">
 {% compress css %}
 {% block extra_css %}{% endblock %}
 {% endcompress %}
@@ -78,6 +79,7 @@
 </footer>
 {% compress js %}
 <script src="{{ STATIC_URL }}js/combined.js"></script>
+<script src="{{ STATIC_URL }}js/responsiveslides.min.js"></script>
 <script>
 $(function() {
     $('.middleinput:text, textarea').addClass('xlarge');
