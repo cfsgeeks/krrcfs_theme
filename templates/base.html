@@ -11,7 +11,9 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/combined.css" class="cssfx">
-<link rel="stylesheet" href="{{ STATIC_URL }}css/responsiveslides.css">
+<style>
+.slides {display:none;}
+</style>
 {% compress css %}
 {% block extra_css %}{% endblock %}
 {% endcompress %}
@@ -78,12 +80,12 @@
 </footer>
 {% compress js %}
 <script src="{{ STATIC_URL }}js/combined.js"></script>
-<script src="{{ STATIC_URL }}js/responsiveslides.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
 <script>
 $(function() {
     $('.middleinput:text, textarea').addClass('xlarge');
     $('.control-group label').addClass('control-label');
-    $('.rslides').responsiveSlides();
+    $('.slides').slidejs({width:940,height:350});
 });
 </script>
 {% block extra_js %}{% endblock %}
