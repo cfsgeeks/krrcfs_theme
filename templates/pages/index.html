@@ -2,13 +2,5 @@
 
 {% block main %}
 {{ block.super }}
-    <div class="container">
-        <div class="row spacer-top">
-            <div class="span8 text-center">
-                <h2 class="vig">Agency News</h2>
-                {% include "get-agency-news.html" %}
-            </div>
-            <div class="span4"></div>
-        </div>
-    </div>
+        {% include "get-agency-news.html" %}
 {% endblock %}
