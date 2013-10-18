@@ -28,4 +28,8 @@
 </div>
 {% endif %}{% endblock %}
 <div id="main">{% block main %}
-{% endblock %}</div>
+{% endblock %}
+{% if request.path == "/" %}
+{% include "get-agency-news.html" %}
+{% endif %}
+</div>
