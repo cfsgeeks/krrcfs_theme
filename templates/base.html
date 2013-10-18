@@ -11,6 +11,9 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 <link rel="stylesheet" href="{{ STATIC_URL }}css/combined.css" class="cssfx">
+<style>
+.slides {display:none;}
+</style>
 {% compress css %}
 {% block extra_css %}{% endblock %}
 {% endcompress %}
