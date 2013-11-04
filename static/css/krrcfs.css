@@ -438,3 +438,12 @@ span[property=telephone]:before {
 span[property=faxNumber]:before {
     content:'Fax: ';
 }
+
+.slidesjs-pagination-item {
+    display:inline-block;
+    background:#fafafa;
+    color:#333;
+    width:22px;
+    height:22px;
+    text-align: center;
+}
