@@ -460,7 +460,5 @@ span[property=faxNumber]:before {
 }
 
 .slidesjs-pagination-item>a.active {
-    background:#333;
-    color:#e2e2e2;
-    border:1px solid #e2e2e2;
+    font-weight:bold;
 }
