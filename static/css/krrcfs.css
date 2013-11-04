@@ -439,6 +439,10 @@ span[property=faxNumber]:before {
     content:'Fax: ';
 }
 
+.slidesjs-pagination {
+    margin-left:0;
+}
+
 .slidesjs-pagination-item {
     display:inline-block;
     background:#fafafa;
@@ -446,4 +450,5 @@ span[property=faxNumber]:before {
     width:22px;
     height:22px;
     text-align: center;
+    margin-right:3px;
 }
