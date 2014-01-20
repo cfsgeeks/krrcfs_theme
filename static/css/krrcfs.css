@@ -278,7 +278,7 @@ a[href$=".docx"]:after { content: " (DOCX)"; }
 /* If file size specified as data attribute, use that too */
 a[href$=".docx"][data-size]:after { content: " (DOCX, " attr(data-size) ")"; }
 
-.vig, .page-header {
+.vig, .page-header, .vig_title {
 	font-family:'WalkwayBoldRegular';
 	letter-spacing:1.5px;
 }
