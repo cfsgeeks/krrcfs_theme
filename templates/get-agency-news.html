@@ -2,7 +2,7 @@
 {% blog_recent_posts as recent_posts %}
 {% if recent_posts %}
 {% for post in recent_posts %}
-<a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+<a class="newsitem_title" href="{{ post.get_absolute_url }}">{{ post.title }}</a>
 <div>{{ post.content|safe }}</div>
 {% endfor %}
 {% endif %}
