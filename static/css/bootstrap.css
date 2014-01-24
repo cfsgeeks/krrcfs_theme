@@ -2970,7 +2970,7 @@ table th[class*="span"],
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
 }*/
 
-.dropdown-menu > .active > a,
+/*.dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
@@ -2984,7 +2984,7 @@ table th[class*="span"],
   background-repeat: repeat-x;
   outline: 0;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
-}
+}*/
 
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
