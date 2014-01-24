@@ -2954,7 +2954,7 @@ table th[class*="span"],
   white-space: nowrap;
 }
 
-.dropdown-menu > li > a:hover,
+/*.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
@@ -2968,7 +2968,7 @@ table th[class*="span"],
   background-image: linear-gradient(to bottom, #0088cc, #0077b3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
-}
+}*/
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
