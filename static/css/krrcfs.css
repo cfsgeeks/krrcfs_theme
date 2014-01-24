@@ -307,6 +307,10 @@ a.menu:after, .dropdown-toggle:after {
     background: #726658;
 }
 
+.dropdown-menu > li > a:hover {
+    color:#fff;
+}
+
 .leaves {
     background: url('/static/img/leaves.png') no-repeat;
     position:absolute;
