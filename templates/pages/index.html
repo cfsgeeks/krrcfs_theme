@@ -11,16 +11,7 @@
 							{% endnevercache %}
                 	</div>
             </div>
-        </div>
-        <div class="row">
-            <div class="span8 text-center">
-                <h2 class="vig_title title_underline">Agency News</h2>
-				{% nevercache %}
-                {% include "get-agency-news.html" %}
-				{% endnevercache %}
-            </div>
-        </div>
-        <div class="span4 hi">
+            <div class="span4 hi">
                 <div id="statement">
                     <div id="values">
                         <dl>
@@ -51,6 +42,15 @@
                     </div>
                     <div class="leaves"></div>
                 </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="span8 text-center">
+                <h2 class="vig_title title_underline">Agency News</h2>
+				{% nevercache %}
+                {% include "get-agency-news.html" %}
+				{% endnevercache %}
+            </div>
         </div>
     </div>
 {% endblock %}
