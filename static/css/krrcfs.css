@@ -476,3 +476,6 @@ span[property=faxNumber]:before {
 }
 
 .slides, .slidesjs-stop {display:none;}
+
+.fivecolumn .span2 {width: 17.94871794871795%;
+  *width: 17.884615384615383%;}
