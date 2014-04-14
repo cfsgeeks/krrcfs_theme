@@ -301,12 +301,16 @@
         next = 0;
       }
       slidesControl.children(":eq(" + next + ")").css({
-        display: "block",
-        left: this.options.width
+        //display: "block",
+        display: "none",
+        left: 0
+        //left: this.options.width
       });
       return slidesControl.children(":eq(" + previous + ")").css({
-        display: "block",
-        left: -this.options.width
+        //display: "block",
+        display: "none",
+        left: 0
+        //left: -this.options.width
       });
     };
     Plugin.prototype._touchstart = function(e) {
