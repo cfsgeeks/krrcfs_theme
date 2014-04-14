@@ -38,7 +38,7 @@
         loaded: function(number) {
           var total = jQuery(".slides img").length;
           if (total == 1) {
-            jQuery(".slidesjs-next slidesjs-navigation, .slidesjs-next slidesjs-navigation, #slides a").remove(); 
+            jQuery(".slidesjs-pagination, .slidesjs-next slidesjs-navigation, .slidesjs-next slidesjs-navigation, #slides a").remove(); 
           }
         },
         start: function() {},
