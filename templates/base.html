@@ -83,14 +83,6 @@ $(function() {
     $('.slides').slidesjs({width:940,height:350, play:{active:false,effect:'fade',auto:true,pauseOnHover:true,interval:7500}, pagination:{active:true},navigation:{active:false}});
 });
 </script>
-<script type='text/javascript'>
-(function (d, t) {
-  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  bh.type = 'text/javascript';
-  bh.src = '//www.bugherd.com/sidebarv2.js?apikey=ocxqguo8hbavml2cvu5ziq';
-  s.parentNode.insertBefore(bh, s);
-  })(document, 'script');
-</script>
 {% block extra_js %}{% endblock %}
 <script src="{{ STATIC_URL }}js/respond.min.js"></script>
 {% endcompress %}
