@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
 <meta name="description" content="{% block meta_description %}{% endblock %}">
-<meta name="accept-language" content="{{ request.META.HTTP_ACCEPT_LANGUAGE }}">
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
 {% compress css %}
@@ -21,7 +20,6 @@
 <![endif]-->
 
 {% block extra_head %}{% endblock %}
-<meta name="google-translate-customization" content="1727008643e7894a-2df2a97b5ed72850-gcae2030b91862b6c-d"></meta>
 <link rel="canonical" href="http://www.krrcfs.ca{{request.path}}">
 </head>
 <body id="{% block body_id %}body{% endblock %}">
@@ -103,10 +101,6 @@ $(function() {
 </script>
 <noscript><p><img src="http://stats.krrcfs.ca/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
-
-    {% if request.path == "/corporate-services/contact-us/" %}
-        {% include 'includes/maps.html' %}
-    {% endif %}
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
 </body>
 </html>
