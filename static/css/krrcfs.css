@@ -260,7 +260,7 @@ html {
     top:-80px;
 }
 
-a[href*="//"]:not([href$="krrcfs.ca"]):after {content:" \21B7"; color:red; vertical-align: super; font-size: 0.75em;}
+a[href$="//"]:not([href$="krrcfs.ca"]):after {content:" \21B7"; color:red; vertical-align: super; font-size: 0.75em;}
 
 /* Add " (PDF)" text after links that go to PDFs */
 a[href$=".pdf"]:after { content: " PDF"; color:red; font-size:0.625em; vertical-align: super; }
