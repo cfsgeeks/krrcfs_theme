@@ -261,7 +261,7 @@ html {
 }
 
 /* Add " (PDF)" text after links that go to PDFs */
-a[href$=".pdf"]:after { content: " (PDF)"; }
+a[href$=".pdf"]:after { content: " PDF"; color:red; font-size:0.625em; vertical-align: super; }
 
 /* If file size specified as data attribute, use that too */
 a[href$=".pdf"][data-size]:after { content: " (PDF, " attr(data-size) ")"; }
@@ -279,8 +279,8 @@ a[href$=".docx"]:after { content: " (DOCX)"; }
 a[href$=".docx"][data-size]:after { content: " (DOCX, " attr(data-size) ")"; }
 
 .vig, .page-header, .vig_title {
-	font-family:'WalkwayBoldRegular';
-	letter-spacing:1.5px;
+    font-family:'WalkwayBoldRegular';
+    letter-spacing:1.5px;
 }
 
 nav li.dropdown:hover ul.dropdown-menu{
@@ -405,7 +405,34 @@ img {
     border-bottom:1px solid #726658;
 }
 
-.column-list {
+.column-list-2 {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    -ms-column-count:2;
+    column-count:2;
+    margin-left:0;
+    list-style:none;
+}
+
+.column-list-3 {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    -ms-column-count:3;
+    column-count:3;
+    margin-left:0;
+    list-style:none;
+}
+
+.column-list-4 {
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    -ms-column-count:4;
+    column-count:4;
+    margin-left:0;
+    list-style:none;
+}
+
+.column-list-5 {
     -webkit-column-count:5;
     -moz-column-count:5;
     -ms-column-count:5;
@@ -467,8 +494,8 @@ span[property=faxNumber]:before {
 }
 
 .title_underline {
-	border-bottom: 1px solid #000;
-	padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
 }
 
 .newsitem_title {
@@ -479,3 +506,9 @@ span[property=faxNumber]:before {
 
 .fivecolumn .span2 {width: 17.94871794871795%;
   *width: 17.884615384615383%;}
+[class^="icon-"], [class*=" icon-"] {
+    *width: 20px;
+    *height: 20px;
+    *line-height: 20px;
+    *margin-top: 1px;
+}
