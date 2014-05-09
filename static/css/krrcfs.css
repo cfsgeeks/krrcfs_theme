@@ -520,12 +520,14 @@ span[property=faxNumber]:before {
     height:130px;
     width:100%;
     font-size:1.8em;
+    margin-bottom:10px;
 }
 
 .infobuttons li a {
     display:table-cell;
     vertical-align: middle;
     text-align:center;
+    color:white;
 }
 
 .infobuttons {
