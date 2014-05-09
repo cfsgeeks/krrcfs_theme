@@ -527,3 +527,19 @@ span[property=faxNumber]:before {
     vertical-align: middle;
     text-align:center;
 }
+
+.infobuttons {
+    margin-top:60px;
+}
+
+.clr-community {
+    background:#ddffa5;
+}
+
+.clr-family {
+  background-color: #88e1e8;
+}
+
+.clr-child {
+    background:#dc81b5;
+}
