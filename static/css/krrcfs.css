@@ -527,7 +527,7 @@ span[property=faxNumber]:before {
     display:table-cell;
     vertical-align: middle;
     text-align:center;
-    color:#333;
+    color:#fff;
 }
 
 .infobuttons {
@@ -535,13 +535,13 @@ span[property=faxNumber]:before {
 }
 
 .clr-community {
-    background:#dd3333;
+    background:#77a03f;
 }
 
 .clr-family {
-  background-color: #88e1e8;
+  background-color: #227b82;
 }
 
 .clr-child {
-    background:#ffed33;
+    background:#761b4f;
 }
