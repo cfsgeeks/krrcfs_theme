@@ -11,7 +11,20 @@
 							{% endnevercache %}
                 	</div>
                     <div class="row">
-            <div class="span8 text-center">
+            {% if request.META.REMOTE_ADDR == "67.226.238.218" or request.META.REMOTE_ADDR == "209.91.170.18" %}
+            <div class="span4">
+                <ul class="infobuttons unstyled">
+                    <li class="infobutton"><a class="vig" href="/4youth/">Services For Youth</a></li>
+                    <li class="infobutton"><a class="vig" href="/foster/">For Foster Parents</a></li>
+                    <li class="infobutton"><a class="vig" href="/opt2adopt/">Considering Adoption?</a></li>
+                </ul>
+            </div>
+            {% endif %}
+            {% if request.META.REMOTE_ADDR == "67.226.238.218" or request.META.REMOTE_ADDR == "209.91.170.18" %}
+            <div class="span4">
+            {% else %}
+            <div class="span8">
+            {% endif %}
                 <h2 class="vig_title title_underline">Agency News</h2>
                 {% nevercache %}
                 {% include "get-agency-news.html" %}
