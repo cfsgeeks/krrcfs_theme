@@ -1,5 +1,5 @@
 {% extends "pages/richtextpage.html" %}
-{% load pages_tags mezzanine_tags i18n %}
+{% load pages_tags mezzanine_tags i18n site_extras %}
 {% block main %}
 {{block.super}}
     <div class="container">
@@ -21,6 +21,7 @@
             </div>
             {% endif %}
             {% if request.META.QUERY_STRING == "previewmode" %}
+            {% include_external 'http://www.krrcfs.ca/jobs/' }
             <div class="span4">
             {% else %}
             <div class="span8 text-center">
