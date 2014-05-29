@@ -6,7 +6,9 @@ register = template.Library()
 def autoversion(filename):
 	return int(os.path.getmtime(filename))
 
-@register.simple_tag
+
 def include_external(url):
     import urllib2
     return urllib2.urlopen(url).read()
+
+    register.simple_tag(include_external)
