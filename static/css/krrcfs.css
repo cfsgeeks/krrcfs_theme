@@ -553,5 +553,6 @@ span[property=faxNumber]:before {
         background-image:url('/static/img/logo.png') no-repeat;
         background-position: bottom right;
         background-size: 50%;
+        background-repeat: no-repeat;
     }
 }
