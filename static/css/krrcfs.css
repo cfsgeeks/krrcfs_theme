@@ -546,7 +546,7 @@ span[property=faxNumber]:before {
     background:#ffed33;
 }
 
-.watermark {visibility:hidden;position: absolute;bottom: 25px;right: 50px;overflow: hidden;}
+.watermark {visibility:hidden;position: absolute;bottom: 10px;right: 10px;overflow: hidden; width:25%;}
 
 @media print {
     .noprint, .noprint>img {display:none;}
