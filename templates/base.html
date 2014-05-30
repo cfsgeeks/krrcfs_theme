@@ -23,7 +23,7 @@
 <link rel="canonical" href="http://www.krrcfs.ca{{request.path}}">
 </head>
 <body id="{% block body_id %}body{% endblock %}">
-<div class="container">
+<div class="container" id="skip_nav">
     <div class="row">
         <div class="span6"><a href="#maincontent" class="hide-text">Skip Navigation</a></div>
         <div class="span6 pull-right"></div>
@@ -48,12 +48,12 @@
 {% if request.path == "/" or request.path == "/contact-us/" or request.path == "/4youth/" %}
 <div class="span12">
 {% else %}
-<div class="span4 left">
+<div class="span4 left noprint">
     {% block left_panel %}
     <div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
     {% endblock %}
 </div>
-<div class="span8 middle" role="main">
+<div class="span8 middle print" role="main">
 <h2 class="page-header">{% block title %}{{ page.title }}{% endblock %}</h2>
 {% endif %}
 {% block slides %}{% endblock %}
@@ -64,7 +64,7 @@
 </div>
 </div>
 
-<footer role="contentinfo">
+<footer role="contentinfo" class="noprint">
 <div class="container">
     <div class="row">
         {% page_menu "pages/menus/footer.html" %}

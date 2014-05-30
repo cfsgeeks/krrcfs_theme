@@ -8,8 +8,8 @@
             <img id="logo" src="{{ STATIC_URL }}img/logo.png" alt="Kenora-Rainy River Districts Child and Family Services logo" />
             <h1 class="hide-text">Kenora-Rainy River District Child &amp; Family Services</h1></a>
         </div>
-        <div class="span2"><a href="http://www.kidshelpphone.ca/" target="_blank"><img src="/static/img/kids-help-phone-logo.png" alt="Kids Help Phone 1-800-668-6868"></a></div>
-        <div class="span3 pull-right">
+        <div class="span2" class="noprint"><a href="http://www.kidshelpphone.ca/" target="_blank"><img src="/static/img/kids-help-phone-logo.png" alt="Kids Help Phone 1-800-668-6868"></a></div>
+        <div class="span3 pull-right noprint">
             <div class="infobox">
                 <p>Need Help or Reporting Abuse/Concerns?</p>
                 <p>1-800-465-1100</p>
@@ -42,7 +42,7 @@
             </nav>
         </div>
     </div>
-    <div class="row">
+    <div class="row noprint">
         <div class="span6">
             <ul class="breadcrumb">
                 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
