@@ -546,13 +546,12 @@ span[property=faxNumber]:before {
     background:#ffed33;
 }
 
+.watermark {visibility:hidden;z-index:-100;position: absolute;bottom: 0;right: 0;overflow: hidden;}
+
 @media print {
     .noprint, img {display:none;}
-    .print {width:100%;}
+    .print {width:95%;}
     body {font-size:0.625em;
-        background-image:url('/static/img/logo.png') no-repeat;
-        background-position: bottom right;
-        background-size: 50%;
-        background-repeat: no-repeat;
+    .watermark {z-index:1;visibility:visible;}
     }
 }
