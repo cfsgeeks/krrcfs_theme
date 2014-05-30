@@ -54,7 +54,7 @@
     {% endblock %}
 </div>
 <div class="span8 middle" role="main">
-{% block title %}{% editable page.title %}<h2 class="page-header">{{ page.title }}</h2>{% endeditable %}{% endblock %}
+<h2 class="page-header">{% block title %}{{ page.title }}{% endblock %}</h2>
 {% endif %}
 {% block slides %}{% endblock %}
 {% block main %}{% endblock %}
