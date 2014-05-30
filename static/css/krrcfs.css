@@ -547,6 +547,8 @@ span[property=faxNumber]:before {
 }
 
 @media print {
-    .noprint {display:none;}
+    .noprint, .noprint img {display:none;}
     .print {width:100%;}
+    #logo {float:right; width:20%;}
+    body {font-size:0.625em;}
 }
