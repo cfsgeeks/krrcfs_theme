@@ -545,3 +545,9 @@ span[property=faxNumber]:before {
 .clr-child {
     background:#ffed33;
 }
+
+@media print {
+    .left {display:none;}
+    footer {display:none;}
+    #main_navigation {display:none;}
+}
