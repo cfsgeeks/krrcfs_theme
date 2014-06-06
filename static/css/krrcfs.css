@@ -553,6 +553,8 @@ span[property=faxNumber]:before {
     .print {width:95%;}
     body {font-size:0.625em;}
     .watermark {visibility:visible;}
-    html,body {height:100%;width:100%;margin:0;padding:0;page-break-after: always;}
+    html,body {height:100%;width:100%;margin:0;padding:0;}
     }
+
+    p {page-break-after: always;}
 }
