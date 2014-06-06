@@ -546,7 +546,7 @@ span[property=faxNumber]:before {
     background:#ffed33;
 }
 
-.watermark {visibility:hidden;position: absolute;bottom: 0;right:0;overflow: hidden; width:20%;}
+.watermark {visibility:hidden;position: fixed;bottom: 0;right:0;overflow: hidden; width:20%;}
 
 @media print {
     .noprint, .noprint>img {display:none;}
@@ -555,6 +555,4 @@ span[property=faxNumber]:before {
     .watermark {visibility:visible;}
     html,body {height:100%;width:100%;margin:0;padding:0;}
     }
-
-    p {page-break-after: always;}
 }
