@@ -14,9 +14,9 @@
             {% if request.META.QUERY_STRING == "previewmode" %}
             <div class="span4">
                 <ul class="infobuttons unstyled">
-                    <li class="infobutton clr-child"><a class="vig" href="/4youth/">For Youth</a></li>
-                    <li class="infobutton clr-family"><a class="vig" href="/foster/">For Foster Parents</a></li>
-                    <li class="infobutton clr-community"><a class="vig" href="/adopt/">Adoption Services</a></li>
+                    <li><a href="/4youth/"><img src="{{STATIC_URL}}img/btn-foryouth.png" alt="Services for Youth"></a></li>
+                    <li><a href="/foster/"><img src="{{STATIC_URL}}img/btn-fosterparents.png" alt="For Foster Parents"></a></li>
+                    <li><a href="/adopt/"><img src="{{STATIC_URL}}img/btn-adoptionservices.png" alt="Adoption Services"></a></li>
                 </ul>
             </div>
             {% endif %}
