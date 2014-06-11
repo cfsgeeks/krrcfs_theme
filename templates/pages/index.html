@@ -11,6 +11,7 @@
 							{% endnevercache %}
                 	</div>
                     <div class="row">
+            {% if request.META.QUERY_STRING == "previewmode" %}
             <div class="span3">
                 <ul class="infobuttons unstyled">
                     <li><a href="/4youth/"><img src="{{STATIC_URL}}img/btn-foryouthp.png" alt="Services for Youth"></a></li>
@@ -18,7 +19,12 @@
                     <li><a href="/adopt/"><img src="{{STATIC_URL}}img/btn-adoptionservices.png" alt="Adoption Services"></a></li>
                 </ul>
             </div>
+            {% endif %}
+            {% if request.META.QUERY_STRING == "previewmode" %}
             <div class="span5">
+            {% else %}
+            <div class="span8 text-center">
+            {% endif %}
                 <h2 class="vig_title title_underline">Agency News</h2>
                 {% nevercache %}
                 {% include "get-agency-news.html" %}
