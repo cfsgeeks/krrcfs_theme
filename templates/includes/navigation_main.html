@@ -54,9 +54,7 @@
             <form action="{% url search %}" class="pull-right" role="search">
                 <i class="icon-search" style="width:20px;height:20px;line-height:20px;"></i><input placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.REQUEST.q }}">
             </form>
-            {% if request.META.QUERY_STRING == "previewmode" %}
-            <div id="google_translate_element"></div>
-            {% endif %}
+            <div>Translate &mdash; <div id="google_translate_element"></div></div>
         </div>
     </div>
 </div>
