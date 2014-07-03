@@ -48,7 +48,7 @@
 {% if request.path == "/" or request.path == "/contact-us/" or request.path == "/4youth/" %}
 <div class="span12">
 {% else %}
-<div class="span4 left noprint">
+<div class="span4 left noprint nav-collapse collapse">
     {% block left_panel %}
     <div class="panel tree">{% page_menu "pages/menus/tree.html" %}</div>
     {% endblock %}
